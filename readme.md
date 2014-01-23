@@ -11,13 +11,14 @@ Initial setup
 ------------------
 
 * Install nodeJS if you haven't already.
+* Make sure the grunt CLI is intstalled. If not run `npm install -g grunt-cli`
 * Win7 x64 users should run `npm install jpegtran-bin@0.2.0`
 * Run `npm install`
 * Create the following directories:
-** build
-** css
-** images
-** js
+	* build
+	* css
+	* images
+	* js
 
 Usage
 ------------------
