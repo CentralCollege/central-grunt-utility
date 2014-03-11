@@ -18,12 +18,15 @@ Initial setup
 	* build
 	* css
 	* images
+		* sprites
 	* js
 
 Usage
 ------------------
 
 Navigate to the directory you cloned this repo to. Run `grunt` at the command line to watch the images, css, and js directories. Adding and removing files will trigger an action that gets exported to the build folder.
+
+:new: Use `grunt sprite` to generate a sprite from the images/sprites folder. This will copy a sprite.png and sprite.css into /images.
 
 Use `grunt clean` to clear out the build directory.
 
