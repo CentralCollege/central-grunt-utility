@@ -15,6 +15,15 @@
 			}
 		},
 		
+		//Create image sprite
+		sprite:{
+		  all: {
+			src: 'images/sprites/*.png',
+			destImg: 'images/sprite.png',
+			destCSS: 'images/sprite.css'
+		  }
+		},
+		
 		//Combine JS files
 		concat:{
 			js:{
@@ -76,6 +85,13 @@
 					spawn: false,
 				}
 			},
+			sprite:{
+				files:'images/sprites/*.png',
+				tasks:['sprite'],
+				options:{
+					spawn: false,
+				}
+			}
 		}
 	});
 	
@@ -85,6 +101,7 @@
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-spritesmith');
 	
 	grunt.registerTask('default', ['watch']);
 };
