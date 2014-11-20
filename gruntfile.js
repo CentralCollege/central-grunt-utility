@@ -15,15 +15,6 @@
 			}
 		},
 		
-		//Create image sprite
-		sprite:{
-		  all: {
-			src: 'images/sprites/*.png',
-			destImg: 'images/sprite.png',
-			destCSS: 'images/sprite.css'
-		  }
-		},
-		
 		//Combine JS files
 		concat:{
 			js:{
@@ -81,13 +72,6 @@
 			css:{
 				files:'css/*.css',
 				tasks:['concat','cssmin'],
-				options:{
-					spawn: false,
-				}
-			},
-			sprite:{
-				files:'images/sprites/*.png',
-				tasks:['sprite'],
 				options:{
 					spawn: false,
 				}
